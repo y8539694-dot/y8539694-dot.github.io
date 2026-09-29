@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Youssef Bahaa Eldin Attia | AI Automation Engineer</title>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f8f7;--surface:#fff;--ink:#0e1a14;--mute:#556a60;--line:#dbe4df;--accent:#0b7a55;--warm:#8a6210;--on:#fff;--sh:transparent;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0b0f0d;--surface:#111815;--ink:#e8f0eb;--mute:#8fa39a;--line:#22302a;--accent:#34d399;--warm:#e0b25a;--on:#04140a;--sh:transparent}}
+:root[data-theme="dark"]{--bg:#0b0f0d;--surface:#111815;--ink:#e8f0eb;--mute:#8fa39a;--line:#22302a;--accent:#34d399;--warm:#e0b25a;--on:#04140a;--sh:transparent}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"IBM Plex Sans Arabic",system-ui,-apple-system,"Segoe UI",Tahoma,sans-serif;line-height:1.75;font-size:17px;}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.wrap{max-width:960px;margin:0 auto;padding:0 22px}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:60px;gap:12px}
+.logo{font-weight:700;letter-spacing:.2px}
+nav{display:flex;gap:18px;font-size:15px;color:var(--mute)}
+nav a{text-decoration:none}nav a:hover{color:var(--ink)}
+.tools{display:flex;gap:8px}
+button{font:inherit;font-size:14px;background:var(--surface);color:var(--ink);border:1px solid var(--line);border-radius:8px;padding:6px 12px;cursor:pointer}
+button:hover{border-color:var(--accent)}
+.hero{padding:72px 0 56px}
+.hero h1{font-size:clamp(34px,6.5vw,58px);line-height:1.2;margin:0 0 14px;font-weight:800}
+.hero p.lead{font-size:clamp(18px,2.6vw,22px);color:var(--mute);max-width:34em;margin:0 0 30px}
+.flow{display:flex;align-items:center;gap:0;flex-wrap:wrap;margin:8px 0 34px}
+.node{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:12px 18px;font-weight:600;font-size:15px}
+.node.ai{border-color:var(--accent);color:var(--accent)}
+.wire{width:44px;height:2px;background:repeating-linear-gradient(90deg,var(--warm) 0 6px,transparent 6px 12px);background-size:24px 2px;animation:run 1.2s linear infinite}
+@keyframes run{to{background-position:24px 0}}
+@media (prefers-reduced-motion:reduce){.wire{animation:none}}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.cta a{padding:11px 22px;border-radius:12px;text-decoration:none;font-weight:600}
+.cta .p{background:var(--accent);color:var(--on)}
+.cta .s{border:1px solid var(--line)}
+section{padding:54px 0;border-top:1px solid var(--line)}
+h2{font-size:28px;margin:0 0 22px}
+.about{display:grid;grid-template-columns:1.4fr 1fr;gap:34px}
+.about p{margin:0 0 14px;color:var(--mute)}
+.facts{list-style:none;padding:0;margin:0;background:var(--surface);border:1px solid var(--line);border-radius:12px}
+.facts li{padding:14px 18px;border-bottom:1px solid var(--line);font-size:15px}
+.facts li:last-child{border:0}
+.facts b{display:block;color:var(--mute);font-weight:400;font-size:13px}
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.chips span{background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:7px 16px;font-size:15px}
+.note{color:var(--mute);font-size:15px;margin-top:16px}
+.tl{border-inline-start:2px solid var(--accent);padding-inline-start:22px}
+.tl h3{margin:0 0 4px;font-size:20px}.tl p{margin:0;color:var(--mute)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+.card{background:var(--surface);border:1px dashed var(--line);border-radius:12px;padding:20px}
+.card h3{margin:0 0 8px;font-size:18px}.card p{margin:0 0 12px;color:var(--mute);font-size:15px}
+.tag{display:inline-block;font-size:13px;color:var(--warm);border:1px solid var(--warm);border-radius:6px;padding:1px 10px}
+.contact a{display:inline-block;margin:0 0 10px;font-size:20px;text-decoration:none;border-bottom:2px solid var(--accent)}
+.cgrid{display:grid;grid-template-columns:1.3fr 1fr;gap:34px}
+form label{display:block;margin-bottom:14px;font-size:15px;color:var(--mute)}
+form input:not([type=hidden]):not([type=checkbox]),textarea{display:block;width:100%;margin-top:6px;font:inherit;color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:10px 14px}
+.send{background:var(--accent);color:var(--on);border:0;padding:11px 26px;font-weight:600;border-radius:12px}
+.direct{display:flex;flex-direction:column;gap:6px;align-items:flex-start}
+.direct a{font-size:18px;text-decoration:none;border-bottom:2px solid var(--accent)}
+.direct .dl{margin-top:14px;border:1px solid var(--line);border-bottom:1px solid var(--line);padding:10px 20px;border-radius:12px;font-weight:600}
+@media (max-width:720px){.cgrid{grid-template-columns:1fr}}
+.card.solid{border-style:solid}
+.node,.card,.card.solid,.facts{border:1px solid var(--line);background:var(--surface);box-shadow:0 1px 2px rgba(0,0,0,.1)}
+h2{font-weight:600}
+.hero h1{font-weight:700;letter-spacing:-.3px}
+.chips span{border:1px solid var(--line);border-radius:999px;font-weight:500}
+.cta a{border:1px solid var(--accent)}
+.cta .p{background:var(--accent);color:var(--on)}
+.cta .s,.direct .dl{background:transparent;color:var(--accent);border:1px solid var(--accent)}
+.direct a:not(.dl){border-bottom:1px solid var(--accent)}
+button{border:1px solid var(--line)}
+header{border-bottom:1px solid var(--line)}
+.tl{border-inline-start:2px solid var(--accent)}
+.tag{background:transparent;color:var(--warm);border:1px solid var(--warm);border-radius:999px;padding:1px 12px}
+footer{padding:28px 0 40px;border-top:1px solid var(--line);color:var(--mute);font-size:14px}
+@media (max-width:720px){nav{display:none}.about{grid-template-columns:1fr}.hero{padding-top:44px}}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+<div class="logo">Youssef.</div>
+<nav>
+<a href="#about" data-ar="نبذة" data-en="About"></a>
+<a href="#services" data-ar="الخدمات" data-en="Services"></a>
+<a href="#toolbox" data-ar="الأدوات" data-en="Toolbox"></a>
+<a href="#path" data-ar="المسار" data-en="Path"></a>
+<a href="#work" data-ar="الشغل" data-en="Work"></a>
+<a href="#contact" data-ar="تواصل" data-en="Contact"></a>
+</nav>
+<div class="tools"><button id="lang" aria-label="Language">EN</button><button id="theme" aria-label="Theme">☾</button></div>
+</div></header>
+
+<main class="wrap">
+<div class="hero">
+<h1 data-ar="يوسف بهاء الدين عطية" data-en="Youssef Bahaa Eldin Attia"></h1>
+<p class="lead" data-ar="مهندس أتمتة بالذكاء الاصطناعي (فريلانسر). بحوّل الشغل المتكرر لسيستم بيشتغل لوحده، وبفضل ورا التفاصيل الصغيرة لحد ما تتظبط." data-en="AI Automation Engineer (freelance). I turn repetitive work into systems that run on their own, and I keep chasing the small details until they're right."></p>
+<div class="flow" aria-hidden="true">
+<div class="node" data-ar="حدث بيبدأ" data-en="Trigger"></div><div class="wire"></div>
+<div class="node ai">AI</div><div class="wire"></div>
+<div class="node" data-ar="شغل خلصان" data-en="Done"></div>
+</div>
+<div class="cta">
+<a class="p" href="#contact" data-ar="نشتغل مع بعض" data-en="Work with me"></a>
+<a class="s" href="#work" data-ar="شوف اللي بشتغل عليه" data-en="See what I'm building"></a>
+</div>
+</div>
+
+<section id="about"><h2 data-ar="نبذة عني" data-en="About me"></h2>
+<div class="about"><div>
+<p data-ar="أنا مهندس أتمتة بالذكاء الاصطناعي، بشتغل فريلانسر وبساعد الشركات والأفراد يوفروا وقتهم بأنظمة بتشتغل لوحدها. بدخل كل مشروع بتركيز كامل."
+data-en="I'm an AI automation engineer working as a freelancer, helping businesses and individuals save time with systems that run on their own. I go into every project with full focus."></p>
+<p data-ar="اللي بيميزني إني بهتم بالتفاصيل الصغيرة، الحاجات اللي محدش بياخد باله منها لحد ما تبوظ. وبؤمن إن أحسن أتمتة هي اللي محدش يحس بيها، بتشتغل وخلاص. ☕"
+data-en="What sets me apart is attention to the small details, the ones nobody notices until they break. I believe the best automation is the kind nobody notices: it just works. ☕"></p>
+</div>
+<ul class="facts">
+<li><b data-ar="التخصص" data-en="Focus"></b><span data-ar="أتمتة بالذكاء الاصطناعي" data-en="AI automation"></span></li>
+<li><b data-ar="الخلفية" data-en="Background"></b><span data-ar="هندسة الذكاء الاصطناعي" data-en="AI engineering"></span></li>
+<li><b data-ar="الحالة" data-en="Status"></b><span data-ar="متاح للفريلانس والوظائف" data-en="Open to freelance and full-time"></span></li>
+<li><b data-ar="اللغات" data-en="Languages"></b><span data-ar="عربي، إنجليزي" data-en="Arabic, English"></span></li>
+</ul></div></section>
+
+<section id="services"><h2 data-ar="أقدر أعملك إيه" data-en="What I can do for you"></h2>
+<div class="grid">
+<div class="card solid"><h3 data-ar="أتمتة سير العمل" data-en="Workflow automation"></h3><p data-ar="بربط أدواتك ببعض عشان الشغل المتكرر يخلص من غير تدخل." data-en="I connect your tools so repetitive work runs without manual effort."></p></div>
+<div class="card solid"><h3 data-ar="وكلاء وشات بوتس بالـ AI" data-en="AI agents and chatbots"></h3><p data-ar="ردود ذكية للعملاء على واتساب وتيليجرام والموقع." data-en="Smart replies for customers on WhatsApp, Telegram and your website."></p></div>
+<div class="card solid"><h3 data-ar="ربط الأنظمة والـ APIs" data-en="API and system integrations"></h3><p data-ar="الفورمز والجداول والـ CRM والإيميل في مسار واحد." data-en="Forms, spreadsheets, CRM and email connected in one flow."></p></div>
+<div class="card solid"><h3 data-ar="معالجة البيانات والتقارير" data-en="Data and reporting"></h3><p data-ar="استخراج البيانات وتلخيصها وإرسال تقارير جاهزة تلقائيًا." data-en="Extract, summarize and deliver ready reports automatically."></p></div>
+</div></section>
+
+<section id="toolbox"><h2 data-ar="أدوات المجال" data-en="Toolbox"></h2>
+<div class="chips">
+<span>n8n</span><span>Make</span><span>Zapier</span><span>Python</span>
+<span>APIs &amp; Webhooks</span><span>LLM Prompting</span><span>AI Agents</span>
+</div>
+<p class="note" data-ar="دي الأدوات اللي بشتغل عليها في مسار الأتمتة." data-en="These are the tools of the AI automation track I'm working with."></p></section>
+
+<section id="path"><h2 data-ar="المسار التعليمي" data-en="Learning path"></h2>
+<div class="tl"><h3 data-ar="مبادرة رواد مصر الرقمية (DEBI)" data-en="Digital Egypt Builders Initiative (DEBI)"></h3>
+<p data-ar="مسار AI Automation، وده أساس شغلي حاليًا." data-en="AI Automation track, the base of my current work."></p></div>
+<div class="tl" style="margin-top:22px"><h3 data-ar="كلية الهندسة، قسم الذكاء الاصطناعي" data-en="Faculty of Engineering, AI department"></h3>
+<p data-ar="أساسيات الذكاء الاصطناعي والهندسة." data-en="Core foundations in AI and engineering."></p></div></section>
+
+<section id="work"><h2 data-ar="اللي بشتغل عليه" data-en="What I'm building"></h2>
+<div class="grid">
+<div class="card"><h3 data-ar="فرز الإيميلات بالـ AI" data-en="AI email triage"></h3><p data-ar="أتمتة بتصنف الرسايل وتجهز ردود مقترحة." data-en="An automation that sorts messages and drafts suggested replies."></p><span class="tag" data-ar="قيد البناء" data-en="In progress"></span></div>
+<div class="card"><h3 data-ar="التقاط العملاء تلقائيًا" data-en="Automated lead capture"></h3><p data-ar="من الفورم للجدول للإشعار، بدون تدخل يدوي." data-en="From form to spreadsheet to notification, with no manual steps."></p><span class="tag" data-ar="قيد البناء" data-en="In progress"></span></div>
+<div class="card"><h3 data-ar="تقارير أسبوعية تلقائية" data-en="Automatic weekly reports"></h3><p data-ar="تجميع البيانات وتلخيصها بالـ AI وإرسالها." data-en="Collect data, summarize it with AI and send it out."></p><span class="tag" data-ar="قيد البناء" data-en="In progress"></span></div>
+<div class="card"><h3 data-ar="بوت دعم عملاء على واتساب" data-en="WhatsApp support bot"></h3><p data-ar="بوت بيرد على الأسئلة الشائعة ويحوّل الحالات المعقدة لإنسان." data-en="A bot that answers common questions and hands complex cases to a human."></p><span class="tag" data-ar="قيد البناء" data-en="In progress"></span></div>
+<div class="card"><h3 data-ar="استخراج بيانات الفواتير" data-en="Invoice data extraction"></h3><p data-ar="قراءة الفواتير بالـ AI وتسجيلها في جدول تلقائيًا." data-en="Read invoices with AI and log them into a spreadsheet automatically."></p><span class="tag" data-ar="قيد البناء" data-en="In progress"></span></div>
+</div>
+<p class="note" data-ar="كل مشروع بينزل هنا أول ما يخلص." data-en="Each project is added here as soon as it's finished."></p></section>
+
+<section id="contact" class="contact"><h2 data-ar="تواصل معايا" data-en="Get in touch"></h2>
+<p data-ar="عندك عملية بتاخد وقت؟ كلمني مباشرة." data-en="Got a process that eats your time? Reach me directly."></p>
+<div class="direct">
+<a href="mailto:y853969@gmail.com">y853969@gmail.com</a>
+<a href="https://wa.me/201068564144" target="_blank" rel="noopener" data-ar="واتساب: 01068564144" data-en="WhatsApp: +20 106 856 4144"></a>
+<a class="dl" href="cv.pdf" download data-ar="حمّل السيرة الذاتية (CV)" data-en="Download CV"></a>
+</div></section>
+</main>
+<footer><div class="wrap">© 2026 Youssef Bahaa Eldin Attia</div></footer>
+
+<script>
+(function(){
+var root=document.documentElement,lang="ar";
+function apply(){
+root.lang=lang;root.dir=lang==="ar"?"rtl":"ltr";
+document.querySelectorAll("[data-ar]").forEach(function(e){e.textContent=e.getAttribute("data-"+lang)});
+document.getElementById("lang").textContent=lang==="ar"?"EN":"AR";
+}
+document.getElementById("lang").onclick=function(){lang=lang==="ar"?"en":"ar";apply()};
+document.getElementById("theme").onclick=function(){
+var dark=root.getAttribute("data-theme")==="dark"||(!root.getAttribute("data-theme")&&matchMedia("(prefers-color-scheme:dark)").matches);
+root.setAttribute("data-theme",dark?"light":"dark");
+};
+root.setAttribute("data-theme","dark");
+apply();
+})();
+</script>
+</body>
+</html>
